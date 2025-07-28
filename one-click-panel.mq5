@@ -23,7 +23,7 @@ string edit1 = "Edit1";
 string edit2 = "Edit2";
 string edit3 = "Edit3";
 
-color 
+
 //+------------------------------------------------------------------+
 //| Script program start function                                    |
 //+------------------------------------------------------------------+
@@ -51,29 +51,29 @@ void OnStart()
       
       
       // create labels and place them on the upper right corner
-      ObjectCreate(0, "Label1", OBJ_LABEL, 0, 0, 0);
-      ObjectSetInteger(0, "Label1", OBJPROP_CORNER, CORNER_RIGHT_UPPER);
-      ObjectSetInteger(0, "Label1", OBJPROP_XDISTANCE, ObjectGetInteger(0, button2, OBJPROP_XDISTANCE));      
-      ObjectSetInteger(0, "Label1", OBJPROP_YDISTANCE, ObjectGetInteger(0, button1, OBJPROP_YDISTANCE) + ObjectGetInteger(0, button1, OBJPROP_YSIZE));
-      ObjectSetString(0, "Label1", OBJPROP_TEXT, "LOT");     
-      ObjectSetInteger(0, "Label1", OBJPROP_COLOR, clrWhite);
-      ObjectSetInteger(0, "Label1", OBJPROP_XSIZE, ObjectGetInteger(0, button1, OBJPROP_XSIZE) * 1/2);
+      ObjectCreate(0, label1, OBJ_LABEL, 0, 0, 0);
+      ObjectSetInteger(0, label1, OBJPROP_CORNER, CORNER_RIGHT_UPPER);
+      ObjectSetInteger(0, label1, OBJPROP_XDISTANCE, ObjectGetInteger(0, button2, OBJPROP_XDISTANCE));      
+      ObjectSetInteger(0, label1, OBJPROP_YDISTANCE, ObjectGetInteger(0, button1, OBJPROP_YDISTANCE) + ObjectGetInteger(0, button1, OBJPROP_YSIZE));
+      ObjectSetString(0, label1, OBJPROP_TEXT, "LOT");     
+      ObjectSetInteger(0, label1, OBJPROP_COLOR, clrWhite);
+      ObjectSetInteger(0, label1, OBJPROP_XSIZE, ObjectGetInteger(0, button1, OBJPROP_XSIZE) * 1/2);
       
-      ObjectCreate(0, "Label2", OBJ_LABEL, 0, 0, 0);
-      ObjectSetInteger(0, "Label2", OBJPROP_CORNER, CORNER_RIGHT_UPPER);
-      ObjectSetInteger(0, "Label2", OBJPROP_XDISTANCE, ObjectGetInteger(0, "Label1", OBJPROP_XDISTANCE));
-      ObjectSetInteger(0, "Label2", OBJPROP_YDISTANCE, ObjectGetInteger(0, "Label1", OBJPROP_YDISTANCE) + 20);
-      ObjectSetString(0, "Label2", OBJPROP_TEXT, "SL");      
-      ObjectSetInteger(0, "Label2", OBJPROP_COLOR, clrWhite);
-      ObjectSetInteger(0, "Label2", OBJPROP_XSIZE, ObjectGetInteger(0, "Label1", OBJPROP_XSIZE));
+      ObjectCreate(0, label2, OBJ_LABEL, 0, 0, 0);
+      ObjectSetInteger(0, label2, OBJPROP_CORNER, CORNER_RIGHT_UPPER);
+      ObjectSetInteger(0, label2, OBJPROP_XDISTANCE, ObjectGetInteger(0, "Label1", OBJPROP_XDISTANCE));
+      ObjectSetInteger(0, label2, OBJPROP_YDISTANCE, ObjectGetInteger(0, "Label1", OBJPROP_YDISTANCE) + 20);
+      ObjectSetString(0, label2, OBJPROP_TEXT, "SL");      
+      ObjectSetInteger(0, label2, OBJPROP_COLOR, clrWhite);
+      ObjectSetInteger(0, label2, OBJPROP_XSIZE, ObjectGetInteger(0, "Label1", OBJPROP_XSIZE));
       
-      ObjectCreate(0, "Label3", OBJ_LABEL, 0, 0, 0);
-      ObjectSetInteger(0, "Label3", OBJPROP_CORNER, CORNER_RIGHT_UPPER);
-      ObjectSetInteger(0, "Label3", OBJPROP_XDISTANCE, ObjectGetInteger(0, "Label2", OBJPROP_XDISTANCE));
-      ObjectSetInteger(0, "Label3", OBJPROP_YDISTANCE, ObjectGetInteger(0, "Label2", OBJPROP_YDISTANCE) + 20);
-      ObjectSetString(0, "Label3", OBJPROP_TEXT, "TP");     
-      ObjectSetInteger(0, "Label3", OBJPROP_COLOR, clrWhite);
-      ObjectSetInteger(0, "Label3", OBJPROP_XSIZE, ObjectGetInteger(0, "Label1", OBJPROP_XSIZE));
+      ObjectCreate(0, label3, OBJ_LABEL, 0, 0, 0);
+      ObjectSetInteger(0, label3, OBJPROP_CORNER, CORNER_RIGHT_UPPER);
+      ObjectSetInteger(0, label3, OBJPROP_XDISTANCE, ObjectGetInteger(0, label2, OBJPROP_XDISTANCE));
+      ObjectSetInteger(0, label3, OBJPROP_YDISTANCE, ObjectGetInteger(0, label2, OBJPROP_YDISTANCE) + 20);
+      ObjectSetString(0, label3, OBJPROP_TEXT, "TP");     
+      ObjectSetInteger(0, label3, OBJPROP_COLOR, clrWhite);
+      ObjectSetInteger(0, label3, OBJPROP_XSIZE, ObjectGetInteger(0, "Label1", OBJPROP_XSIZE));
       
       
       // create edit text and place them on the upper right conner
